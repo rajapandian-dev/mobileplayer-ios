@@ -87,7 +87,7 @@ class Slider: UIView {
   }
 
   // MARK: Seeking
-
+  @objc
   func didPanThumb(recognizer: UIPanGestureRecognizer!) {
     let locationInTrack = recognizer.location(in: maximumTrack)
     let trackWidth = maximumTrack.frame.size.width
